@@ -379,9 +379,10 @@ void stage2(){
 
       for (int t=1; t<5; t++)
       {
+        magnet = digitalRead(38);
         
         while(magnet == LOW)
-        {};
+        {magnet = digitalRead(38);};
 
         
       if (magnet == HIGH)
