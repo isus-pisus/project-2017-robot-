@@ -778,53 +778,7 @@ void stage2(){
   }
 
 
-void  stage4(){
-  rotate();
-   delay(4000);
 
-  do{
-    forwardfast();
-    } while(ultra1.Ranging(CM) == 5);
-
-    pause();
-    servo_home();
-
-    do{
-      forwardslow();
-      }while(ultra1.Ranging(CM) == 3);
-
-      pause();
-  }
-= 3);
-
-      pause();
-
-
-      for (int t=1; t<5; t++)
-      {
-        magnet = digitalRead(38);
-        
-        while(magnet == LOW)
-        {magnet = digitalRead(38);};
-
-        
-      if (magnet == HIGH)
-      {
-     
-        s3.write(135);
-        
-        for (int s = 135; s>90; s++)
-        {
-          s3.write(s);
-          delay(800);
-          }
-
-         s3.write(135);
-         
-        }
-      }
-  
-  }
 
 
 void  stage4(){
